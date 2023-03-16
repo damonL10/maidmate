@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/user_choose_plan.css" />
+        <script src="../components/header.js" defer></script>
+        <script src="../components/footer.js" defer></script>
+    </head>
+    <body>
+        <header-component></header-component>
+
+        <form>
+            <section id="choose-1">
+                <div id="service-name" class="page-title"></div>
+                <h2>1. Choose plan</h2>
+                <div id="choose-plan" class="choose"></div>
+            </section>
+
+            <section id="choose-2">
+                <h2>2. Choose Region</h2>
+                <div class="choose-container">
+                    <div id="choose-region" class="choose choose-styleA"></div>
+                </div>
+            </section>
+
+            <section id="choose-3">
+                <h2>3. Choose Date</h2>
+                <div class="calendar" id="calendar"></div>
+            </section>
+
+            <section id="choose-4">
+                <h2>4. Choose Time Section</h2>
+                <div class="choose-container">
+                    <div id="choose-time" class="choose choose-styleA"></div>
+                </div>
+            </section>
+
+            <section id="choose-5" class="section-choose-provider">
+                <h2>5. Choose Service Provider</h2>
+                <div id="choose-provider" class="choose choose-provider">
+                </div>
+            </section>
+
+            <section id="choose-6">
+                <h2>6. Service Term</h2>
+                <div class="term-box">
+                    Lorem ipsum dolor sit amet tortor suspendisse sagittis.
+                    Laoreet a cras consequat imperdiet congue curabitur nisl
+                    enim neque posuere. Dolore eu risus tristique nisi orci
+                    habitasse turpis at nisi orci eget semper facilisis. Libero
+                    molestie odio senectus faucibus lacinia laoreet nisl
+                    eleifend senectus facilisis ultricies diam. Cras duis
+                    facilisis elit aliquet volutpat consequat pulvinar.
+                </div>
+                <div class="term-checkbox">
+                    <input id="term" type="checkbox" required />
+                    <label for="term">
+                        Morbi volutpat rhoncus et fermentum ornare in nullam
+                        labore massa consectetur mattis id.
+                    </label>
+                </div>
+                <input
+                    id="next-button"
+                    class="dark-btn"
+                    type="submit"
+                    value="next"
+                />
+                <div class="error-msg"></div>
+            </section>
+        </form>
+
+        <footer-component></footer-component>
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+        <script src="./js/user_choose_plan.js"></script>
+    </body>
+</html>

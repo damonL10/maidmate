@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/order.css" />
+        <script src="/components/header_userCenter.js" defer></script>
+        <script src="/components/footer.js" defer></script>
+    </head>
+    <body>
+        <header-component></header-component>
+        <section>
+            <div class="order-header">
+                <div>
+                    <div class="order-title">Order Detail</div>
+                    <div class="order-status"></div>
+                </div>
+                <div class="order-id"></div>
+            </div>
+            <div class="order-layout">
+                <div class="order-layout-left">
+                    <div class="order-subtitle"></div>
+                    <div class="sidebar-box">
+                        <div class="sidebar-box-title">
+                            <span>Service Date</span>
+                            <span id="service-date"></span>
+                        </div>
+                        <div class="sidebar-box-title">
+                            <span>Service start time</span>
+                            <span id="service-time"></span>
+                        </div>
+                    </div>
+                    <div class="sidebar-box">
+                        <div id="provider_image"></div>
+                        <div>
+                            <span class="provider-info-name"></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="sidebar-box">
+                        <div class="sidebar-box-title">
+                            <span>
+                                Plan <span id="plan-id"></span> -
+                                <span id="plan-hour"></span> HR
+                            </span>
+                            <span> $<span id="plan-price"></span> / hr </span>
+                        </div>
+                        <p id="plan-description"></p>
+                    </div>
+                </div>
+                <div class="order-layout-right">
+                    <div class="order-text">
+                        The service provider will contact you as soon as
+                        possible and look forward to serving you again, thank
+                        you ! <i class="bx bx-smile"></i>
+                    </div>
+                    <div class="order-contact">
+                        <h4>Contact Information</h4>
+                        <div>
+                            <span>
+                                <i class="bx bx-user"></i>
+                                <span>Full Name</span>
+                            </span>
+                            <span id="user-name"></span>
+                        </div>
+                        <div>
+                            <span>
+                                <i class="bx bx-phone"></i>
+                                <span>Phone Number</span>
+                            </span>
+                            <span id="user-phone"></span>
+                        </div>
+                        <div>
+                            <span>
+                                <i class="bx bxs-map-pin"></i>
+                                <span>Region</span>
+                            </span>
+                            <span id="user-region"></span>
+                        </div>
+                        <div>
+                            <span>
+                                <i class="bx bx-home"></i>
+                                <span>Address</span>
+                            </span>
+                            <span id="user-address"></span>
+                        </div>
+                        <div>
+                            <span>
+                                <i class="bx bx-credit-card"></i>
+                                <span>Payment method</span>
+                            </span>
+                            <span id="user-payment"></span>
+                        </div>
+                        <span class="order-amount">
+                            <span>Total amount</span>
+                            <span>HKD $<span id="order-amount"></span></span>
+                        </span>
+                    </div>
+                    <div id="remark-box" class="order-remark-edit">
+                        <div>
+                            <span>Remark</span>
+                            <span></span>
+                        </div>
+                        <textarea
+                            id="user_remark"
+                            name="user_remark"
+                            rows="4"
+                            cols="50"
+                            disabled
+                        ></textarea>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer-component></footer-component>
+        <script src="/js/user_confirm_detail.js"></script>
+    </body>
+</html>

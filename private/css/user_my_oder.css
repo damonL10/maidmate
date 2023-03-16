@@ -1,0 +1,110 @@
+@import url("main.css");
+
+section h1 {
+    margin-top: -20px;
+    font-size: var(--font-size-64);
+    font-weight: normal;
+}
+
+section h2 {
+    margin: 40px 0;
+    text-align: left;
+}
+
+section:last-child {
+    padding-top: 0px;
+}
+
+#order-list,
+#order-board {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.order-box {
+    border: var(--border-style);
+    border-radius: 8px;
+    padding: 36px;
+    cursor: pointer;
+}
+
+.first-col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+#service-span {
+    font-size: var(--font-size-36);
+    font-weight: bold;
+}
+
+#id-span {
+    font-size: var(--font-size-24);
+}
+
+.second-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-24);
+}
+
+.section-provider .second-col {
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+}
+
+.section-provider .second-col div {
+    font-size: 20px;
+}
+
+.section-provider .order-box:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.section-provider .second-col-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-provider .second-col-bottom div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#start-time-span {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#stat-span {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 16px 24px;
+
+    color: var(--main-color);
+    font-size: var(--font-size-18);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    background-color: var(--second-color);
+    border: var(--border-style);
+    border-radius: 50px;
+}
+
+textarea {
+    width: 50vw;
+}
+
+.selected-date-span {
+    font-size: var(--font-size-12);
+}

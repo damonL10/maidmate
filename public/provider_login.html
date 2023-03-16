@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Provider - Login/Register</title>
+        <link rel="stylesheet" href="./css/provider_login.css" />
+        <script src="./components/provider_header2.js" defer></script>
+        <script src="./components/footer.js" defer></script>
+    </head>
+
+    <body>
+        <header-component></header-component>
+        <section>
+            <div class="tabs">
+                <input
+                    type="radio"
+                    class="tabs-radio"
+                    name="tabs-ex"
+                    id="login"
+                    checked
+                />
+                <label for="login" class="tabs-label">
+                    <h1>Login</h1>
+                </label>
+
+                <div class="section-box">
+                    <div class="box-content">
+                        <form id="form_login">
+                            <div class="input-box">
+                                <i class="bx bx-envelope"></i>
+                                <input
+                                    type="email"
+                                    id="login_email"
+                                    placeholder="Email"
+                                    name="login_email"
+                                />
+                            </div>
+                            <div class="input-box">
+                                <i class="bx bxs-key"></i>
+                                <input
+                                    type="password"
+                                    id="login_password"
+                                    placeholder="Password"
+                                    name="login_password"
+                                />
+                            </div>
+                            <div id="login-error-msg" class="error-msg"></div>
+                            <input
+                                type="submit"
+                                class="dark-btn"
+                                value="login"
+                            />
+                        </form>
+                        <!-- <input type="button" value="login with google" /> -->
+                        <a href="#">
+                            <p>Forgot Password?</p>
+                        </a>
+                    </div>
+                </div>
+
+                <input
+                    type="radio"
+                    class="tabs-radio"
+                    name="tabs-ex"
+                    id="register"
+                />
+
+                <label for="register" class="tabs-label">
+                    <h1>Register</h1>
+                </label>
+
+                <div class="section-box">
+                    <form id="form_register">
+                        <div class="form_register">
+                            <div class="box-content">
+                                <h3>Create Profile</h3>
+                                <div class="input-box">
+                                    <i class="bx bx-user"></i>
+                                    <input
+                                        type="text"
+                                        id="full_name"
+                                        placeholder="Full Name"
+                                        name="full_name"
+                                    />
+                                </div>
+                                <div class="input-box">
+                                    <i class="bx bx-envelope"></i>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        placeholder="Email"
+                                        name="email"
+                                    />
+                                </div>
+                                <div class="input-box">
+                                    <i class="bx bx-phone"></i>
+                                    <input
+                                        type="number"
+                                        id="phone_no"
+                                        placeholder="Phone Number"
+                                        name="phone_no"
+                                    />
+                                </div>
+                                <div class="input-box">
+                                    <i class="bx bx-smile"></i>
+                                    <input
+                                        type="text"
+                                        id="introduce"
+                                        placeholder="Introduce yourself: please text here."
+                                        name="introduce"
+                                    />
+                                </div>
+                                <div class="input-box">
+                                    <i class="bx bx-image"></i>
+                                    <input
+                                        type="file"
+                                        id="avatar"
+                                        placeholder="Insert your image here."
+                                        name="avatar"
+                                        value="image here"
+                                    />
+                                </div>
+                                <div class="input-box">
+                                    <i class="bx bxs-key"></i>
+                                    <input
+                                        type="password"
+                                        id="password"
+                                        placeholder="Password"
+                                        name="password"
+                                    />
+                                </div>
+                                <div class="input-box">
+                                    <i class="bx bxs-key"></i>
+                                    <input
+                                        type="password"
+                                        id="register_confirm_password"
+                                        placeholder="Confirm Password"
+                                    />
+                                </div>
+                                <div
+                                    id="register-error-msg"
+                                    class="error-msg"
+                                ></div>
+                            </div>
+                            <div class="box-content">
+                                <h3>Service Setting</h3>
+                                <div class="option-box">
+                                    <div class="option-title">
+                                        <i class="bx bx-edit"> Service Type </i>
+                                    </div>
+                                    <div class="option-box-input">
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="home_cleaning"
+                                                name="service_category"
+                                                value="1"
+                                            />
+                                            <label for="home_cleaning">
+                                                Home Cleaning
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="cooking"
+                                                name="service_category"
+                                                value="2"
+                                            />
+                                            <label for="cooking">
+                                                Cooking
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="petcaring"
+                                                name="service_category"
+                                                value="3"
+                                            />
+                                            <label for="petcaring">
+                                                Pet Caring
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="option-box">
+                                    <div class="option-title">
+                                        <i class="bx bxs-map-pin">
+                                            Service Region
+                                        </i>
+                                    </div>
+                                    <div class="option-box-input">
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="hong_kong_island"
+                                                name="service_region"
+                                                value="1"
+                                            />
+                                            <label for="hong_kong_island"
+                                                >Hong Kong Island
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="kowloon"
+                                                name="service_region"
+                                                value="2"
+                                            />
+                                            <label for="kowloon">
+                                                Kowloon
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="new_territories"
+                                                name="service_region"
+                                                value="3"
+                                            />
+                                            <label for="new_territories">
+                                                New Territories
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="outlying_islands"
+                                                name="service_region"
+                                                value="4"
+                                            />
+                                            <label for="outlying_islands">
+                                                Outlying Islands
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="option-box">
+                                    <div class="option-title">
+                                        <i class="bx bx-calendar-week">
+                                            Weekdays Available
+                                        </i>
+                                    </div>
+                                    <div class="option-box-input">
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="monday"
+                                                name="weekdays"
+                                                value="1"
+                                            />
+                                            <label for="monday"> Monday </label>
+                                        </div>
+
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="tuesday"
+                                                name="weekdays"
+                                                value="2"
+                                            />
+                                            <label for="tuesday">
+                                                Tuesday
+                                            </label>
+                                        </div>
+
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="wednesday"
+                                                name="weekdays"
+                                                value="3"
+                                            />
+                                            <label for="wednesday">
+                                                Wednesday
+                                            </label>
+                                        </div>
+
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="thursday"
+                                                name="weekdays"
+                                                value="4"
+                                            />
+                                            <label for="thursday"
+                                                >Thursday</label
+                                            >
+                                        </div>
+
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="friday"
+                                                name="weekdays"
+                                                value="5"
+                                            />
+                                            <label for="friday">Friday</label>
+                                        </div>
+
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="saturday"
+                                                name="weekdays"
+                                                value="6"
+                                            />
+                                            <label for="saturday">
+                                                Saturday
+                                            </label>
+                                        </div>
+
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="sunday"
+                                                name="weekdays"
+                                                value="7"
+                                            />
+                                            <label for="sunday">Sunday</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="option-box">
+                                    <div class="option-title">
+                                        <i class="bx bx-time-five">
+                                            Time Section
+                                        </i>
+                                    </div>
+                                    <div class="option-box-input">
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="morning"
+                                                name="time_section"
+                                                value="1"
+                                            />
+                                            <label for="morning">
+                                                Morning (9-13)
+                                            </label>
+                                        </div>
+
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="afternoon"
+                                                name="time_section"
+                                                value="2"
+                                            />
+                                            <label for="afternoon">
+                                                Afternoon (13-17)
+                                            </label>
+                                        </div>
+
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id="evening"
+                                                name="time_section"
+                                                value="3"
+                                            />
+                                            <label for="evening">
+                                                Evening (17-21)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input
+                            type="submit"
+                            class="dark-btn"
+                            value="register"
+                        />
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer-component></footer-component>
+        <script src="./js/provider_login.js"></script>
+    </body>
+</html>

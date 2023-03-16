@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/user_login.css" />
+        <script src="./components/header.js" defer></script>
+        <script src="./components/footer.js" defer></script>
+    </head>
+    <body>
+        <header-component></header-component>
+        <section>
+            <div class="tabs">
+                <input
+                    type="radio"
+                    class="tabs-radio"
+                    name="tabs-ex"
+                    id="login"
+                    checked
+                />
+                <label for="login" class="tabs-label"><h1>Login</h1></label>
+
+                <div class="section-box">
+                    <div class="box-content">
+                        <form id="form-login">
+                            <div class="input-box">
+                                <i class="bx bx-envelope"></i>
+                                <input
+                                    type="email"
+                                    id="login_email"
+                                    placeholder="Email"
+                                    name="login_email"
+                                />
+                            </div>
+                            <div class="input-box">
+                                <i class="bx bxs-key"></i>
+                                <input
+                                    type="password"
+                                    id="login_password"
+                                    placeholder="Password"
+                                    name="login_password"
+                                />
+                            </div>
+                            <div id="login-error-msg" class="error-msg"></div>
+                            <input
+                                type="submit"
+                                class="dark-btn"
+                                value="login"
+                            />
+                        </form>
+                        <!-- <input type="button" value="login with google" />-->
+                        <a href="#"><p>Forgot Password?</p></a>
+                    </div>
+                </div>
+
+                <input
+                    type="radio"
+                    class="tabs-radio"
+                    name="tabs-ex"
+                    id="register"
+                />
+
+                <label for="register" class="tabs-label"
+                    ><h1>Register</h1></label
+                >
+
+                <div class="section-box">
+                    <div class="box-content">
+                        <form id="form-register">
+                            <div class="input-box">
+                                <i class="bx bx-envelope"></i>
+                                <input
+                                    type="email"
+                                    id="register_email"
+                                    placeholder="Email"
+                                />
+                            </div>
+                            <div class="input-box">
+                                <i class="bx bxs-key"></i>
+                                <input
+                                    type="password"
+                                    id="register_password"
+                                    placeholder="Password"
+                                />
+                            </div>
+                            <div class="input-box">
+                                <i class="bx bxs-key"></i>
+                                <input
+                                    type="password"
+                                    id="register_confirm_password"
+                                    placeholder="Confirm Password"
+                                />
+                            </div>
+                            <div
+                                id="register-error-msg"
+                                class="error-msg"
+                            ></div>
+                            <input
+                                type="submit"
+                                class="dark-btn"
+                                value="register"
+                            />
+                        </form>
+                        <!-- <input type="button" value="register with google" /> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer-component></footer-component>
+        <script src="./js/user_login.js"></script>
+    </body>
+</html>

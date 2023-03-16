@@ -1,0 +1,148 @@
+@import url("main.css");
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabs-label {
+    padding: 0px 18px;
+    margin-bottom: 60px;
+    color: var(--gray-color);
+    cursor: pointer;
+}
+
+.tabs-radio {
+    display: none;
+}
+
+.tabs-radio:checked + .tabs-label {
+    color: var(--main-color);
+}
+
+section h1 {
+    font-size: var(--font-size-64);
+    font-weight: normal;
+}
+
+.section-box {
+    display: flex;
+    display: none;
+    width: 100%;
+    order: 1;
+}
+
+.form_register {
+    display: flex;
+    align-items: flex-start;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 50%;
+}
+
+.form_register .box-content {
+    width: 45%;
+}
+
+.form_register .box-content:last-child {
+    padding-left: 40px;
+    border-left: 1px solid var(--main-color);
+}
+
+.box-content h3 {
+    align-self: start;
+    font-size: var(--font-size-48);
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+.tabs-radio:checked + .tabs-label + .section-box {
+    display: flex;
+}
+
+form {
+    width: 100%;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    gap: 12px;
+    width: 100%;
+    padding: 16px 24px;
+    border: var(--border-style);
+    border-radius: 8px;
+}
+
+.input-box:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.input-box i {
+    font-size: 24px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 4px;
+    border: 0;
+}
+
+.input-box input::placeholder {
+    color: var(--main-color);
+}
+
+.option-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.option-title {
+    font-size: var(--font-size-24);
+    margin-bottom: 24px;
+}
+
+.option-box-input {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+    padding: 0 14px 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.option-box:last-child .option-box-input {
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.option-box-input div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.dark-btn {
+    margin-top: 24px;
+}
+
+.error-msg {
+    width: 100%;
+    margin: -12px 0 12px;
+    text-align: center;
+    color: #ef476f;
+    font-size: var(--font-size-18);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

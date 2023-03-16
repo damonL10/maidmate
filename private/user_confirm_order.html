@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/order.css" />
+        <script src="../components/header.js" defer></script>
+        <script src="../components/footer.js" defer></script>
+    </head>
+    <body>
+        <header-component></header-component>
+        <section>
+            <div class="page-title">Confirm Order</div>
+            <div id="service-name" class="page-subtitle"></div>
+            <div class="order-layout">
+                <div class="order-layout-left">
+                    <div class="sidebar-box">
+                        <div class="sidebar-box-title">
+                            <span>Service Date</span>
+                            <span id="service-date"></span>
+                        </div>
+                        <div class="sidebar-box-title">
+                            <span>Service start time</span>
+                            <span id="service-time"></span>
+                        </div>
+                    </div>
+                    <div class="sidebar-box">
+                        <div id="provider_image"></div>
+                        <div>
+                            <span
+                                id="provider-name"
+                                class="provider-info-name"
+                            ></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="sidebar-box">
+                        <div class="sidebar-box-title">
+                            <span>
+                                Plan <span id="plan-id"></span> -
+                                <span id="plan-hour"></span> HR
+                            </span>
+                            <span> $<span id="plan-price"></span> / hr </span>
+                        </div>
+                        <p id="plan-description"></p>
+                    </div>
+                </div>
+                <div class="order-layout-right">
+                    <h4>Contact Information</h4>
+                    <form>
+                        <div>
+                            <i class="bx bx-user"></i>
+                            <input
+                                type="text"
+                                id="user_full_name"
+                                placeholder="Full Name"
+                            />
+                            <span id="input-error"></span>
+                        </div>
+                        <div>
+                            <i class="bx bx-phone"></i>
+                            <input
+                                type="text"
+                                id="user_phone_number"
+                                placeholder="Phone number"
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                            />
+                            <span id="input-error"></span>
+                        </div>
+                        <div>
+                            <i class="bx bxs-map-pin"></i>
+                            <input
+                                type="text"
+                                id="user_region"
+                                placeholder="Region"
+                                disabled
+                            />
+                        </div>
+                        <div>
+                            <i class="bx bx-home"></i>
+                            <input
+                                type="text"
+                                id="user_address"
+                                placeholder="Address"
+                            />
+                            <span id="input-error"></span>
+                        </div>
+                        <div class="order-remark">
+                            <i class="bx bx-edit"></i>
+                            <textarea
+                                id="user_remark"
+                                name="user_remark"
+                                rows="5"
+                                cols="50"
+                                placeholder="Remark"
+                            ></textarea>
+                        </div>
+                        <div class="order-payment">
+                            <i class="bx bx-credit-card"></i>
+                            <select name="user_payment" id="user_payment">
+                                <option value="">Payment method</option>
+                                <option value="0">Payment A</option>
+                                <option value="1">Payment B</option>
+                                <option value="2">Payment C</option>
+                            </select>
+                            <span id="input-error"></span>
+                        </div>
+                        <span class="order-amount">
+                            <span>Total amount</span>
+                            <span>HKD $<span id="order-amount"></span></span>
+                        </span>
+                        <a href="user_confirm_detail.html">
+                            <input
+                                id="submit-button"
+                                class="dark-btn"
+                                type="submit"
+                                value="submit"
+                            />
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer-component></footer-component>
+        <script src="./js/user_confirm_order.js"></script>
+    </body>
+</html>

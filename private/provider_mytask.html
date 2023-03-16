@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/user_my_oder.css" />
+        <script src="/components/header_provider.js" defer></script>
+        <script src="/components/footer.js" defer></script>
+        <title>Provider - My Task</title>
+    </head>
+    <body>
+        <header-component></header-component>
+
+        <section class="section-provider">
+            <h1>My Task</h1>
+            <h2>Processing</h2>
+            <div id="order_list"></div>
+        </section>
+        <section class="section-provider">
+            <h2>Completed</h2>
+            <div id="completed_order_list"></div>
+        </section>
+
+        <footer-component></footer-component>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"
+            integrity="sha512-/n/dTQBO8lHzqqgAQvy0ukBQ0qLmGzxKhn8xKrz4cn7XJkZzy+fAtzjnOQd5w55h4k1kUC+8oIe6WmrGUYwODA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./js/provider_my_order.js"></script>
+    </body>
+</html>
